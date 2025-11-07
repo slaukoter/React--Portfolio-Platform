@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background:#f6f4ec;
+  color:green;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.tagline {
+  margin: 0.1rem 0 0;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: darkgreen;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.search-label {
+  font-size: 0.75rem;
+  color: black;
+}
+
+.search-input {
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid black;
+  background: #d7f0d7;
+  color: black;
+}
+
+.section-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.project-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.project-card {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: green;
+  border: 1px solid black;
+  color: black;
+}
+
+.project-card:hover {
+  background: darkseagreen;
+  transition: background 0.3s ease;
+}
+
+.project-title {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.project-meta {
+  margin: 0;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.project-description {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.empty {
+  font-size: 0.9rem;
+  color: black;
+}
+
+.form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #111827;
+  background: #d7f0d7;
+  color: black;
+  font-size: 0.85rem;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.form button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: green;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: white;
+}
+
+.footer {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  color: green;
+}
+
+@media (min-width: 700px) {
+  .project-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
